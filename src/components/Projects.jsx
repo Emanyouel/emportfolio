@@ -1,14 +1,17 @@
 import React from "react";
-import Barber from '../assets/Barber.png';
-import Quiz from '../assets/Quiz.png';  
-import Team from '../assets/Team.png';
+import Barber from "../assets/Barber.png";
+import Quiz from "../assets/Quiz.png";
+import hairline from "../assets/hairline.png";
+import ecommerce from "../assets/ecommerce.png";
+
 const projects = [
   {
     id: 1,
-    image: Team,
-    title: "Team-Management",
-    description: "Team Portfolio Projeect",
-    link: "https://themarkupcrew.netlify.app/",
+    image: hairline,
+    title: "Hairline",
+    description: "Salon booking and discovery app",
+    link: "https://hairline-showcase.vercel.app/",
+    github: "https://github.com/Emanyouel/Hairline-showcase",
   },
   {
     id: 2,
@@ -16,13 +19,23 @@ const projects = [
     title: "BarberSa",
     description: "Local Barber Shop Website",
     link: "https://emanyouel.github.io/BArberSaMAR/",
+    github: "https://github.com/Emanyouel/BArberSaMAR",
   },
   {
     id: 3,
+    image: ecommerce,
+    title: "Ecommerce demo-project",
+    description: "This is the third project.",
+    link: "https://ecommerce-group-website.vercel.app/",
+    github: "https://github.com/Emanyouel/Ecommerce-group-website",
+  },
+  {
+    id: 4,
     image: Quiz,
     title: "Quiz-Game",
-    description: "This is the third project.",
+    description: "This is a short quiz game with some ",
     link: "https://group2quizgame.netlify.app/",
+    github: "https://github.com/KaegenGov1998/Quiz-Game",
   },
 ];
 
@@ -39,10 +52,10 @@ const Projects = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map(({ id, image, title, description, link }) => (
+          {projects.map(({ id, image, title, description, link, github }) => (
             <div
               key={id}
-              className="border rounded-lg p-6 hover:shadow-lg transition"
+              className="shadow-xl rounded-lg p-6 hover:shadow-xl/20 transition"
             >
               <div className="h-48 mb-4 bg-gray-200 flex items-center justify-center">
                 {image ? (
@@ -59,12 +72,21 @@ const Projects = () => {
                 {title}
               </h3>
               <p className="text-gray-700 mb-4">{description}</p>
-              <a
-                href={link}
-                className="text-sky-600 hover:underline font-medium"
-              >
-                View Project
-              </a>
+
+              <div>
+                <a
+                  href={link}
+                  className="text-sky-600 hover:underline font-medium"
+                >
+                  View Project
+                </a>
+                <a
+                  href={github}
+                  className="bg-sky-600 text-white px-4 py-2 ml-33 rounded-xl hover:bg-sky-700 transition text-sm"
+                >
+                  Open Github
+                </a>
+              </div>
             </div>
           ))}
         </div>
