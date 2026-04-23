@@ -3,6 +3,8 @@ import Barber from "../assets/Barber.png";
 import Quiz from "../assets/Quiz.png";
 import hairline from "../assets/hairline.png";
 import ecommerce from "../assets/ecommerce.png";
+import Miracle from "../assets/Miracle.png";
+import Notes from "../assets/Notes.png";
 
 const projects = [
   {
@@ -15,6 +17,22 @@ const projects = [
   },
   {
     id: 2,
+    image: Miracle,
+    title: "Miracle",
+    description: "A simple miracle app",
+    link: "https://miracle-khaki.vercel.app/",
+    github: "https://github.com/Emanyouel/Miracle",
+  },
+  {
+    id: 3,
+    image: Notes,
+    title: "Notes",
+    description: "A simple notes app",
+    link: "https://personal-notes-rouge.vercel.app",
+    github: "https://github.com/Emanyouel/Personal-Notes",
+  },
+  {
+    id: 4,
     image: Barber,
     title: "BarberSa",
     description: "Local Barber Shop Website",
@@ -22,7 +40,7 @@ const projects = [
     github: "https://github.com/Emanyouel/BArberSaMAR",
   },
   {
-    id: 3,
+    id: 5,
     image: ecommerce,
     title: "Ecommerce demo-project",
     description: "This is the third project.",
@@ -30,7 +48,7 @@ const projects = [
     github: "https://github.com/Emanyouel/Ecommerce-group-website",
   },
   {
-    id: 4,
+    id: 6,
     image: Quiz,
     title: "Quiz-Game",
     description: "This is a short quiz game with some ",
@@ -73,16 +91,16 @@ const Projects = () => {
               </h3>
               <p className="text-gray-700 mb-4">{description}</p>
 
-              <div>
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <a
                   href={link}
-                  className="text-sky-600 hover:underline font-medium"
+                  className="inline-flex items-center justify-center rounded-xl bg-sky-600 px-4 py-2 text-white font-medium hover:bg-sky-700 transition"
                 >
                   View Project
                 </a>
                 <a
                   href={github}
-                  className="bg-sky-600 text-white px-4 py-2 ml-33 rounded-xl hover:bg-sky-700 transition text-sm"
+                  className="text-sky-600 text-sm hover:underline"
                 >
                   Open Github
                 </a>

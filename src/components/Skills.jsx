@@ -1,91 +1,49 @@
 const Skills = () => {
   return (
     <section id="skills" className="scroll-m-20 bg-white py-16">
-      <div
-        className="container mx-auto px-20 - flex flex-col items-center justify-center text-center
-"
-      >
-        <div className="max-w-5xl ">
-          <h2 className="sm:text-4xl lg:text-5xl font-bold text-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
             Skills
           </h2>
-          <div className="flex flex-row ">
-            <div>
-              <h3 className="mt-7 text-gray-900 text-2xl font-bold">
+          <div className="grid gap-8 mt-10 sm:grid-cols-2 xl:grid-cols-4">
+            <div className="rounded-[2rem] bg-sky-50 p-6 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900">
                 Technical Skills
               </h3>
-              <ul className="mx-6">
-                <li className="mx-6 mt-4 text-gray-700 text-lg sm:text-xl">
-                  - JavaScript
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - React.js
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Node.js
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - React Native
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - HTML5 & CSS3
-                </li>
+              <ul className="mt-5 space-y-3 text-gray-700 text-base sm:text-lg">
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>React Native</li>
+                <li>HTML5 & CSS3</li>
               </ul>
             </div>
-
-            <div>
-              <h3 className="mt-7 text-gray-900 text-2xl font-bold">
-                Soft Skills
-              </h3>
-              <ul className="mx-6">
-                <li className="mx-6 mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Problem Solving
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Communication
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Team Collaboration
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Time Management
-                </li>
+            <div className="rounded-[2rem] bg-slate-50 p-6 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900">Soft Skills</h3>
+              <ul className="mt-5 space-y-3 text-gray-700 text-base sm:text-lg">
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Team Collaboration</li>
+                <li>Time Management</li>
               </ul>
             </div>
-
-            <div>
-              <h3 className="mt-7 text-gray-900 text-2xl font-bold">Tools</h3>
-              <ul className="mx-6">
-                <li className="mx-6 mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Git
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Vscode
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Figma
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Wordpress
-                </li>
+            <div className="rounded-[2rem] bg-sky-50 p-6 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900">Tools</h3>
+              <ul className="mt-5 space-y-3 text-gray-700 text-base sm:text-lg">
+                <li>Git</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+                <li>WordPress</li>
               </ul>
             </div>
-
-            <div>
-              <h3 className="mt-7 text-gray-900 text-2xl font-bold">Other</h3>
-              <ul className="mx-6">
-                <li className="mx-6 mt-4 text-gray-700 text-lg sm:text-xl">
-                  - No-code Developer
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Ui/Ux Designer
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Digital Makreting
-                </li>
-                <li className="mt-4 text-gray-700 text-lg sm:text-xl">
-                  - Video Editing
-                </li>
+            <div className="rounded-[2rem] bg-slate-50 p-6 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900">Other</h3>
+              <ul className="mt-5 space-y-3 text-gray-700 text-base sm:text-lg">
+                <li>No-code Developer</li>
+                <li>UI/UX Designer</li>
+                <li>Digital Marketing</li>
+                <li>Video Editing</li>
               </ul>
             </div>
           </div>
