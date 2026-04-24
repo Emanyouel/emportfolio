@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     image: Miracle,
     title: "Miracle",
-    description: "A simple miracle app",
+    description: "A simple Barber booking demo app",
     link: "https://miracle-khaki.vercel.app/",
     github: "https://github.com/Emanyouel/Miracle",
   },
